@@ -6,8 +6,11 @@
     <meta name="description" content="Bicicletas elétricas de alta precisão
      e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua
       velocidade com a Bikcraft.">
-    <link rel="preload" href="./css/style.css" as="style">
-    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" href="./img/bikcraft.svg" type="image/svg+xml">
+
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="stylesheet" href="./css/style.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <title>Bikcraft - Bicicletas Elétricas</title>
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
     <header class="header-bg">
@@ -36,14 +40,16 @@
     <main class="introducao-bg">
         <div class="introducao container">
             <div class="introducao-conteudo">
-                <h1 class="font-1-xxl cor-0">Bicicletas feitas sob medidas<span class="cor-p1">.</span></h1>
-                <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, 
+                <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">Bicicletas feitas sob medidas<span class="cor-p1">.</span></h1>
+                <p data-clipboard-text="Bicicletas elétricas de alta precisão e qualidade, 
+                    feitas sob medida para o cliente. Explore o mundo 
+                    na sua velocidade com a Bikcraft." class="font-2-l cor-5 fadeInDown" data-anime="400">Bicicletas elétricas de alta precisão e qualidade, 
                     feitas sob medida para o cliente. Explore o mundo 
                     na sua velocidade com a Bikcraft.
                 </p>
-                <a class="botao" href="./bicicletas.html">ESCOLHA A SUA</a>
+                <a data-anime="600" class="botao fadeInDown" href="./bicicletas.html">ESCOLHA A SUA</a>
             </div>
-            <picture>
+            <picture data-anime="800" class="fadeInDown">
                 <source media="(min-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
                 <img src="./img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta">
             </picture>
@@ -204,6 +210,8 @@
             <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados</p>
         </div>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/plugins/clipboard.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
